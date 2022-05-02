@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) produced following this tutorial [playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw) from [The Net Ninja](https://www.youtube.com/c/TheNetNinja). The original tutorial repository can be found [here](https://github.com/iamshaunjp/nextjs-tutorial).
+
+### [[ninjalist-romeuic.vercel.app](https://ninjalist-romeuic.vercel.app)]
 
 ## Getting Started
 
