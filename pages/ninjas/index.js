@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import { endpoints } from '../../utils/endpoints'
 import styles from '../../styles/Ninjas.module.css'
 
 // this runs in build time server side
 export const getStaticProps = async () => {
 
-  const res = await fetch('https://jsonplaceholder.typicode.com/users')
+  const res = await fetch(endpoints.jph.users)
   const data = await res.json()
 
   return { props: { ninjas: data } }

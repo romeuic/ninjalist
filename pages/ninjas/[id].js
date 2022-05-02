@@ -1,8 +1,8 @@
-const URL = 'https://jsonplaceholder.typicode.com/users'
+import { endpoints } from '../../utils/endpoints'
 
 // this runs in build time server side
 export const getStaticPaths = async () => {
-  const res = await fetch(URL)
+  const res = await fetch(endpoints.jph.users)
   const data = await res.json()
 
   const paths = data.map(ninja => ({
@@ -14,7 +14,7 @@ export const getStaticPaths = async () => {
 // this runs in build time server side
 export const getStaticProps = async (context) => {
   const id = context.params.id
-  const res = await fetch(`${URL}/${id}`)
+  const res = await fetch(`${endpoints.jph.users}/${id}`)
   const data = await res.json()
 
   return { props: { ninja: data } }
